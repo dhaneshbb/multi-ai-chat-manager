@@ -52,11 +52,11 @@ Multi-AI Chat Manager v2.0/
 │   ├── manifest.json             # Extension configuration
 │   └── content.js                # Auto-focus script
 │
-├── Build Tools/
-│   ├── build_exe.py               # Creates standalone executable
-│   ├── setup_config.py
-│   ├── test_fixes.py
-│   └── version_info.txt
+└── Build Tools/
+    ├── build_exe.py               # Creates standalone executable
+    ├── setup_config.py
+    ├── test_fixes.py
+    └── version_info.txt
 ```
 
 ## System Architecture
