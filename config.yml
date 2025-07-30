@@ -1,0 +1,96 @@
+# Multi-AI Chat Manager Horizontal Layout Configuration
+app:
+  name: "Multi-AI Chat Manager"
+  version: "2.0.0"
+
+# Window arrangement settings
+window:
+  grid:
+    cols: 3
+    rows: 2
+  display:
+    auto_select: false
+    preferred_display: 2
+    use_work_area: true
+  timing:
+    launch_delay: 0.1
+    load_wait: 2.0
+    action_delay: 0.1
+    prompt_send_delay: 0.1
+
+# AI Applications Configuration with Custom Order
+# Grid Position Layout:
+# Row 1: Claude, Google Gemini, Perplexity
+# Row 2: Grok, DeepSeek, ChatGPT
+ai_apps:
+  - name: "Claude"
+    shortcut: "Claude.lnk"
+    keywords: ["claude"]
+    enabled: true
+    priority: 0
+    
+  - name: "Google Gemini"
+    shortcut: "Google Gemini.lnk"
+    keywords: ["gemini", "bard"]
+    enabled: true
+    priority: 1
+    
+  - name: "Perplexity"
+    shortcut: "Perplexity.lnk"
+    keywords: ["perplexity"]
+    enabled: true
+    priority: 2
+    
+  - name: "Grok"
+    shortcut: "Grok.lnk"
+    keywords: ["grok", "x.ai"]
+    enabled: true
+    priority: 3
+    
+  - name: "DeepSeek"
+    shortcut: "DeepSeek.lnk"
+    keywords: ["deepseek"]
+    enabled: true
+    priority: 4
+    
+  - name: "ChatGPT"
+    shortcut: "ChatGPT.lnk"
+    keywords: ["chatgpt", "chat.openai"]
+    enabled: true
+    priority: 5
+
+# GUI Configuration - Horizontal Layout
+gui:
+  theme:
+    bg_primary: "#1e1e1e"
+    bg_secondary: "#2d2d2d"
+    bg_input: "#404040"
+    fg_primary: "#ffffff"
+    fg_secondary: "#cccccc"
+    accent_color: "#0078d4"
+    success_color: "#4CAF50"
+    warning_color: "#FF9800"
+    error_color: "#f44336"
+  
+  window:
+    width: 1000
+    height: 600
+    always_on_top: true
+    resizable: true
+  
+  fonts:
+    title: ["Segoe UI", 16, "bold"]
+    normal: ["Segoe UI", 11]
+    small: ["Segoe UI", 9]
+    button: ["Segoe UI", 10]
+
+# Input history settings
+history:
+  max_entries: 100
+  save_to_file: true
+  history_file: "input_history.txt"
+
+# Taskbar management settings
+taskbar:
+  hide_ai_apps: true
+  show_only_manager: true
