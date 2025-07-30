@@ -19,41 +19,44 @@ There are two pieces that work together:
 ```
 Multi-AI Chat Manager v2.0/
 ├── main.py                        # Application entry point
-├── gui_interface.py               # Main user interface
+├── gui_interface.py               # Main user interface  
 ├── window_manager.py              # AI window detection & arrangement
 ├── prompt_sender.py               # Clipboard-based message sending
 ├── input_history.py               # Prompt history management
 ├── config.yml                     # Configuration file
-├── input_history.txt
-├── requirements.txt
-├── multi_ai_chat.spec             # PyInstaller specification
-├── readme.md
+├── requirements.txt               # Python dependencies
+├── setup.py                       # Python package setup
+├── manifest.json                  # Project metadata
+├── readme.md                      # Main documentation
+├── .gitignore                     # Git ignore patterns
+├── LICENSE                        # MIT License
+├── CHANGELOG.md                   # Version history
+├── CODE_OF_CONDUCT.md             # Community guidelines
+├── CONTRIBUTING.md                # Contribution guide
+├── DISCLAIMER.md                  # Usage disclaimer
+├── ROADMAP.md                     # Future development plans
+├── SECURITY.md                    # Security policy
+│
+├── .github/                       # GitHub templates
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── pull_request_template.md
 │
 ├── assets/
 │   ├── desktop.png
 │   ├── video.gif
 │   └── diagram.svg
 │
-├── Chrome Extension/
-│   ├── manifest.json              # Extension configuration
-│   └── content.js                 # Auto-focus script
+├── Chrome Extension/              # Browser extension
+│   ├── manifest.json             # Extension configuration
+│   └── content.js                # Auto-focus script
 │
 ├── Build Tools/
 │   ├── build_exe.py               # Creates standalone executable
 │   ├── setup_config.py
 │   ├── test_fixes.py
 │   └── version_info.txt
-│
-├── logs/
-│   └── multi_ai_chat.log
-│
-└── Multi-AI Chat Manager v2.0/    # Release package
-    ├── Multi-AI Chat Manager.exe
-    ├── config.yml
-    ├── input_history.txt
-    ├── README.txt
-    └── logs/
-        └── multi_ai_chat.log
 ```
 
 ## System Architecture
