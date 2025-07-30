@@ -1,7 +1,5 @@
 # Multi-AI Chat Manager v2.0
 
-![Demo](./assets/desktop.png)
-
 ## What This Project Actually Does
 
 Hey! So I got tired of constantly switching between ChatGPT, Claude, Gemini, Perplexity, Grok, and DeepSeek tabs whenever I wanted to compare their responses to the same question. This Windows app basically solves that problem - it launches all your AI chat apps, arranges them in a neat grid on your screen, and lets you send the same prompt to all of them with just one click.
