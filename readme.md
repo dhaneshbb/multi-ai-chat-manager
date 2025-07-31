@@ -14,7 +14,7 @@ There are two pieces that work together:
 
 *This GIF shows the whole workflow - I launch the app, it opens and arranges all the AI chat windows automatically, then I type a question once and boom, it goes to all of them. Pretty satisfying to watch, honestly.*
 
-## Complete Project Structure
+## Structure
 
 ```
 Multi-AI Chat Manager v2.0/
