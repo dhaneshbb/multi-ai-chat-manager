@@ -1,0 +1,102 @@
+# Multi-AI Chat Manager v1.0.0 Configuration
+app:
+  name: "Multi-AI Chat Manager"
+  version: "1.0.0"
+
+# Window arrangement settings
+window:
+  grid:
+    cols: 3
+    rows: 2
+  display:
+    auto_select: false
+    preferred_display: 2
+    use_work_area: true
+  timing:
+    launch_delay: 0.1
+    load_wait: 2.0
+    action_delay: 0.1
+    prompt_send_delay: 0.1
+
+# AI Applications Configuration with Selection Support
+# Grid Position Layout:
+# Row 1: Claude, Google Gemini, Perplexity
+# Row 2: Grok, DeepSeek, ChatGPT
+ai_apps:
+  - name: "Claude"
+    shortcut: "C:\\Program Files\\chat_ai\\Claude.lnk"
+    keywords: ["claude"]
+    enabled: true
+    selected: true
+    priority: 0
+    
+  - name: "Google Gemini"
+    shortcut: "C:\\Program Files\\chat_ai\\Google Gemini.lnk"
+    keywords: ["gemini", "bard"]
+    enabled: true
+    selected: true
+    priority: 1
+    
+  - name: "Perplexity"
+    shortcut: "C:\\Program Files\\chat_ai\\Perplexity.lnk"
+    keywords: ["perplexity"]
+    enabled: true
+    selected: true
+    priority: 2
+    
+  - name: "Grok"
+    shortcut: "C:\\Program Files\\chat_ai\\Grok.lnk"
+    keywords: ["grok", "x.ai"]
+    enabled: true
+    selected: true
+    priority: 3
+    
+  - name: "DeepSeek"
+    shortcut: "C:\\Program Files\\chat_ai\\DeepSeek.lnk"
+    keywords: ["deepseek"]
+    enabled: true
+    selected: true
+    priority: 4
+    
+  - name: "ChatGPT"
+    shortcut: "C:\\Program Files\\chat_ai\\ChatGPT.lnk"
+    keywords: ["chatgpt", "chat.openai"]
+    enabled: true
+    selected: true
+    priority: 5
+
+# GUI Configuration
+gui:
+  theme:
+    bg_primary: "#1e1e1e"
+    bg_secondary: "#2d2d2d"
+    bg_input: "#404040"
+    fg_primary: "#ffffff"
+    fg_secondary: "#cccccc"
+    accent_color: "#0078d4"
+    success_color: "#4CAF50"
+    warning_color: "#FF9800"
+    error_color: "#f44336"
+  
+  window:
+    width: 1000
+    height: 700
+    always_on_top: false
+    resizable: true
+  
+  fonts:
+    title: ["Segoe UI", 16, "bold"]
+    normal: ["Segoe UI", 11]
+    small: ["Segoe UI", 9]
+    button: ["Segoe UI", 10]
+
+# Input history settings
+history:
+  max_entries: 100
+  save_to_file: true
+  history_file: "data/input_history.txt"
+
+# Taskbar management settings
+taskbar:
+  hide_ai_apps: true
+  show_only_manager: true

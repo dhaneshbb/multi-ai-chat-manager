@@ -1,0 +1,143 @@
+{
+          "name": "Multi-AI Chat Manager",
+          "version": "1.0.0",
+          "description": "Send prompts to multiple AI chat platforms simultaneously",
+          "author": "Multi-AI Chat Manager Developer",
+          "license": "MIT",
+          "homepage": "https://github.com/dhaneshbb/multi-ai-chat-manager",
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/dhaneshbb/multi-ai-chat-manager.git"
+          },
+          "bugs": {
+            "url": "https://github.com/dhaneshbb/multi-ai-chat-manager/issues"
+          },
+          "keywords": [
+            "ai",
+            "chat",
+            "automation",
+            "productivity",
+            "chatgpt",
+            "claude",
+            "gemini",
+            "perplexity",
+            "grok",
+            "deepseek",
+            "window-management",
+            "multi-platform",
+            "prompt-engineering"
+          ],
+          "main": "main.py",
+          "scripts": {
+            "start": "python main.py",
+            "setup": "python \"Build Tools/setup_config.py\"",
+            "test": "python \"Build Tools/test_fixes.py\"",
+            "build": "python \"Build Tools/build_exe.py\""
+          },
+          "engines": {
+            "python": ">=3.8"
+          },
+          "os": [
+            "win32"
+          ],
+          "cpu": [
+            "x64",
+            "ia32"
+          ],
+          "categories": [
+            "Productivity",
+            "Utilities",
+            "Developer Tools"
+          ],
+          "platform": {
+            "windows": {
+              "minimum_version": "10.0.19041"
+            }
+          },
+          "dependencies": {
+            "python": ">=3.8",
+            "PyYAML": ">=6.0",
+            "psutil": ">=5.9.0",
+            "pywin32": ">=306",
+            "pyinstaller": ">=6.0"
+          },
+          "chrome_extension": {
+            "path": "Chrome Extension",
+            "manifest_version": 3,
+            "required": true,
+            "description": "Auto-focus functionality for AI chat input fields"
+          },
+          "supported_platforms": [
+            {
+              "name": "ChatGPT",
+              "urls": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+              "keywords": ["chatgpt", "chat.openai"]
+            },
+            {
+              "name": "Claude",
+              "urls": ["https://claude.ai/*"],
+              "keywords": ["claude"]
+            },
+            {
+              "name": "Google Gemini",
+              "urls": ["https://gemini.google.com/*", "https://bard.google.com/*"],
+              "keywords": ["gemini", "bard"]
+            },
+            {
+              "name": "Perplexity",
+              "urls": ["https://perplexity.ai/*", "https://www.perplexity.ai/*"],
+              "keywords": ["perplexity"]
+            },
+            {
+              "name": "Grok",
+              "urls": ["https://grok.com/*", "https://x.com/i/grok/*"],
+              "keywords": ["grok", "x.ai"]
+            },
+            {
+              "name": "DeepSeek",
+              "urls": ["https://chat.deepseek.com/*", "https://www.deepseek.com/*"],
+              "keywords": ["deepseek"]
+            }
+          ],
+          "build": {
+            "executable_name": "Multi-AI Chat Manager.exe",
+            "build_tool": "PyInstaller",
+            "icon": "assets/desktop.png",
+            "include_files": [
+              "config.yml",
+              "Chrome Extension/",
+              "Build Tools/",
+              "assets/"
+            ],
+            "exclude_files": [
+              "__pycache__/",
+              "build/",
+              "dist/",
+              "logs/",
+              "input_history.txt",
+              "*.pyc"
+            ]
+          },
+          "configuration": {
+            "config_file": "config.yml",
+            "log_directory": "logs/",
+            "history_file": "input_history.txt",
+            "required_permissions": [
+              "window_management",
+              "clipboard_access",
+              "process_control"
+            ]
+          },
+          "development": {
+            "setup_script": "Build Tools/setup_config.py",
+            "test_script": "Build Tools/test_fixes.py",
+            "build_script": "Build Tools/build_exe.py",
+            "requirements_file": "requirements.txt"
+          },
+          "release": {
+            "current_version": "1.0.0",
+            "release_date": "2024-07-30",
+            "changelog": "CHANGELOG.md",
+            "download_url": "https://github.com/dhaneshbb/multi-ai-chat-manager/releases"
+          }
+        }
