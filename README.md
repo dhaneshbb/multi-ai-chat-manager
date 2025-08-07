@@ -2,6 +2,9 @@
 
  AI chat management tool for Windows that allows you to send prompts to multiple AI applications simultaneously with selective targeting capabilities.
 
+[demo](./doc/videos/video.gif)
+
+
 ## Overview
 
 Multi-AI Chat Manager solves the common problem of switching between multiple AI chat applications when comparing responses. It launches your AI applications, arranges them in a grid layout, and allows you to send prompts to selected AI models with a single click.
@@ -150,5 +153,6 @@ This project is open source under the MIT License. See LICENSE file for details.
 This tool is designed for  productivity and research purposes. Users are responsible for complying with the Terms of Service of each AI platform they use.
 
 ---
+
 
 Multi-AI Chat Manager v1.0.0 -  AI Chat Management Tool
