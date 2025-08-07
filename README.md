@@ -2,7 +2,10 @@
 
  AI chat management tool for Windows that allows you to send prompts to multiple AI applications simultaneously with selective targeting capabilities.
 
-[demo](./doc/videos/video.gif)
+<video width="640" controls>
+  <source src="./doc/videos/video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ## Overview
@@ -156,3 +159,4 @@ This tool is designed for  productivity and research purposes. Users are respons
 
 
 Multi-AI Chat Manager v1.0.0 -  AI Chat Management Tool
+
