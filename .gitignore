@@ -1,0 +1,99 @@
+# Multi-AI Chat Manager .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+.venv
+
+# relese
+multi-ai-chat-manager-v1.0.0/
+
+# PyInstaller
+*.manifest
+*.spec
+# Note: keeping multi_ai_chat.spec as it's intentional
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-*
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs and Data
+logs/
+*.log
+log/
+
+# User Data (Comment out if you want to track history)
+input_history.txt
+
+# Build Output
+Multi-AI Chat Manager v*/
+*.exe
+version_info.txt
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# Development
+.coverage
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Chrome Extension Development (if using web-ext)
+web-ext-artifacts/
+
+# Config Backups (keep main config.yml)
+config.yml.bak
+config.yml.backup
+*.yml.old
+
+# Windows Shortcuts Testing
+test_shortcuts/
+temp_shortcuts/
+
+# PyInstaller Build Files
+multi_ai_chat.spec

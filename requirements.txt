@@ -1,0 +1,17 @@
+# Multi-AI Chat Manager v1.0.0 Dependencies
+
+# Core dependencies
+PyYAML>=6.0          # Configuration file parsing
+psutil>=5.9.0        # Process management and system monitoring
+pywin32>=306         # Windows API integration
+
+# Build dependencies (optional - only for building executable)
+pyinstaller>=6.0     # Executable building
+
+# Standard library modules (included with Python)
+# - tkinter (GUI framework)
+# - threading (multi-threading support)
+# - logging (application logging)
+# - os, sys, pathlib (system operations)
+# - time (timing operations)
+# - typing (type hints)
